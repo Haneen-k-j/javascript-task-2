@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     
+     <!-- Button trigger modal -->
+<a id="insert"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="sticky-top">
+    اضافة حساب
+</a>
+ 
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" dir="rtl">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header bg-primary justify-content-center ">
+           
+          <h5 class="modal-title  text-white" id="exampleModalLabel">اضافة حساب جديد</h5>
+         
+        </div>
+        <div class="modal-body">
+            <div class="container">
+
+    
+                <div id="data" >
+                   
+                     <input type="number"  class="form-control mb-2" id="id" placeholder="التسلسل">
+                       
+                    <input type="text"  class="form-control mb-2" id="name" placeholder="أسم المستخدم">
+                    <input type="text"  class="form-control mb-2"id="fullName" placeholder="الأسم الرباعي">
+                    <input type="text" class="form-control mb-2 "id="department" placeholder="القسم">
+                    
+                </div>
+        </div>        
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-outline-primary text-dark ms-5  " id="btnID">أضافة حساب جديد</button>
+            <button type="button" class="btn  btn-outline-warning  me-2 " data-bs-dismiss="modal">أغلاق</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+
+        <table class="text-center" dir="rtl" id="table">
+
+            
+            <tr class="sticky-top">
+                <th class="sticky-top">التسلسل</th>
+                <th class="sticky-top">أسم المستخدم</th>
+                <th class="sticky-top">الاسم الرباعي</th>
+                <th class="sticky-top">القسم</th>
+                <th class="sticky-top">حذف</th>
+               
+            </tr>
+ 
+           
+        </table>
+        
+       
+
+ 
+        <script src="js/jquery-git.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+ 
+    <script src="js/displayData.js"></script>
+    
+</body>
+</html>
